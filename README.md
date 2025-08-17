@@ -29,10 +29,18 @@ I designed and deployed a simulated small business IT environment using Windows 
 ### Step 1 – Install Windows Server 2022 and Configure AD DS
 - Installed Windows Server 2022 on a VM.
 - Configured static IP addressing.
-- Installed Active Directory Domain Services (AD DS) via Server Manager.
-- Promoted server to a Domain Controller with domain name: LAB.local.
+<img src="https://i.imgur.com/IifnSmX.png" height="35%" width="35%" alt="Disk Sanitization Steps"/>
+<br />
 
-<img src="https://i.imgur.com/IXy4VjK.png"/>
+### 
+- Installed Active Directory Domain Services (AD DS) via Server Manager.
+<img src="https://i.imgur.com/oJJmX1l.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br />
+
+###
+- Promoted server to a Domain Controller with domain name: "LAB.local".
+<img src="https://i.imgur.com/DsKZl3K.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br />
 
 ### Step 2 – Create Organizational Units (OUs)
 - Designed OUs to reflect a small company structure:
