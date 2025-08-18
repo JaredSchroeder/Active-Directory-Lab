@@ -59,15 +59,18 @@ I designed and deployed a simulated small business IT environment using Windows 
 - Created sub-OUs for Users and Computers within each department.
 
 <p align="center">
-<img src="https://i.imgur.com/8BrAlOw.png"/>
+<img src="https://i.imgur.com/8BrAlOw.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 
 ### Adding Users and Groups
 - Created sample users: jschroeder, jthomas, ebrown.
-- Assigned users to security groups (e.g., Sales, IT Admins).
-- Configured user properties (passwords, logon restrictions, etc.).
+- Created security groups for each department and assigned users to them.
+
+<p align="center">
+<img src="https://i.imgur.com/9u2EHjP.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
 
 ### Configuring Group Policy Objects (GPOs)
 - Created and linked GPOs for different OUs:
