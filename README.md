@@ -22,7 +22,7 @@ I designed and deployed a simulated small business IT environment using Windows 
 - <b>Client OS:</b> Windows 11 Enterprise (Domain-joined workstation)
 
 <p align="center">
-<img src="https://i.imgur.com/DemjhgT.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/K0eml58.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 
 <h2>Implementation</h2>
 
