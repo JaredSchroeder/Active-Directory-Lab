@@ -85,7 +85,7 @@ I designed and deployed a simulated small business IT environment using Windows 
 <br />
 
   - Desktop Restrictions: Disable Control Panel for non-admins.
-    - Checkmarked "Deny" to "Apply group policy" for domain and enterprise admins to ensure Administrators can access the control panel
+    - Checkmarked "Deny" to "Apply group policy" for domain and enterprise admins to ensure administrators can still access the control panel
 <p align="center">
 <img src="https://i.imgur.com/RrMZjdi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
