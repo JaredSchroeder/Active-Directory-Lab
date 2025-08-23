@@ -3,7 +3,7 @@
 
 
 <h2>Overview</h2>
-I designed and deployed a simulated small business IT environment using Windows Server 2022 and Windows 11 Enterprise. This project demonstrates my ability to configure and administer Active Directory Domain Services, manage users, groups, and organizational units (OUs), and apply Group Policy Objects (GPOs) for centralized security and configuration management.
+I designed and deployed a simulated small business IT environment using Windows Server 2022 and Windows 11 Enterprise. This project demonstrates my ability to configure and administer Active Directory Domain Services, manage and create users, groups, and organizational units (OUs), and apply Group Policy Objects (GPOs) for security and policy enforcement.
 <br />
 
 
@@ -28,7 +28,8 @@ I designed and deployed a simulated small business IT environment using Windows 
 
 ### Windows Server 2022 Installation and Configuring AD DS
 - Installed Windows Server 2022 on a VM.
-- Configured static IP addressing. I used the loopback address of 127.0.0.1 as the preferred DNS server as our Domain Controller will also be acting as a DNS server.
+- Configured static IP addressing.
+- Used the loopback address of 127.0.0.1 as the preferred DNS server as the Domain Controller will also be acting as a DNS server.
 <p align="center">
 <img src="https://i.imgur.com/IifnSmX.png" height="35%" width="35%" alt="Disk Sanitization Steps"/>
 <br />
@@ -75,14 +76,16 @@ I designed and deployed a simulated small business IT environment using Windows 
 ### Configuring Group Policy Objects (GPOs)
 - Created and linked GPOs for different OUs using the Group Policy Management Editor:
   - Password Policy: Minimum length, complexity, expiration.
+  - Moved the new password policy GPO to be higher in link order than the default domain policy to override the default password policy.
 
 <p align="center">
-<img src="https://i.imgur.com/mzizRJ0.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/D2eoW0C.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 
-  - Desktop Restrictions: Disable Control Panel for non-admins. I created and applied a "StandardUsers" security group and added all non-admin users to it so this GPO won't affect any admins.
+  - Desktop Restrictions: Disable Control Panel for non-admins.
+    - Created and applied a "StandardUsers" security group and added all non-administrative users to it so this GPO won't affect any admins.
 
 <p align="center">
 <img src="https://i.imgur.com/YOWSzB1.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -104,12 +107,12 @@ I designed and deployed a simulated small business IT environment using Windows 
 <p align="center">
 <img src="https://i.imgur.com/9qkfrF7.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <br />
-<br />
-<br />
- 
-- Logged in using domain account jthomas.
 
-### Testing Group Policy Application
+- Logged in using domain account jschroeder.
+<br />
+
+<h2>Verifying Group Policy Application</h2>
+
 - Logged into Windows 11 with user accounts.
 - Verified policies:
   - Login banner displayed.
@@ -121,8 +124,16 @@ I designed and deployed a simulated small business IT environment using Windows 
 <br />
 
   - Password rules enforced.
+  - This message appears when attempting to create a new password that doesn't meet policy standards.
+
+ <p align="center">
+<img src="https://i.imgur.com/dFueSqh.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+
   - Control Panel disabled for every non-admin user.
-  -  This notification appears when a non-admin user attempts to open the control panel:
+  -  This notification appears when a standard user attempts to open the control panel:
 
  <p align="center">
 <img src="https://i.imgur.com/SoDUo99.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
