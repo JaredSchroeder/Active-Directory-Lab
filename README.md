@@ -1,6 +1,6 @@
 <h1>Active Directory Lab</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+
 
 <h2>Overview</h2>
 I designed and deployed a simulated small business IT environment using Windows Server 2022 and Windows 11 Enterprise. This project demonstrates my ability to configure and administer Active Directory Domain Services, manage users, groups, and organizational units (OUs), and apply Group Policy Objects (GPOs) for centralized security and configuration management.
@@ -73,23 +73,62 @@ I designed and deployed a simulated small business IT environment using Windows 
 
 
 ### Configuring Group Policy Objects (GPOs)
-- Created and linked GPOs for different OUs:
+- Created and linked GPOs for different OUs using the Group Policy Management Editor:
   - Password Policy: Minimum length, complexity, expiration.
-  - Desktop Restrictions: Disable Control Panel for non-admins.
-  - Login Banner: Display security/legal disclaimer at login.
-  - Software Installation Policy: Automatic deployment of test software.
 
-### Step 5 – Join Windows 11 Client to the Domain
+<p align="center">
+<img src="https://i.imgur.com/mzizRJ0.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+
+  - Desktop Restrictions: Disable Control Panel for non-admins. I created and applied a "StandardUsers" security group and added all non-admin users to it so this GPO won't affect any admins.
+
+<p align="center">
+<img src="https://i.imgur.com/YOWSzB1.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+ 
+   - Login Banner: Display security/legal disclaimer at login.
+ <p align="center">
+<img src="https://i.imgur.com/JspWT4l.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+
+### Joining Windows 11 Client to the Domain
 - Installed Windows 11 Enterprise on VM.
 - Joined workstation WS01 to LAB.local.
-- Logged in using domain accounts.
 
-### Step 6 – Test Group Policy Application
+<p align="center">
+<img src="https://i.imgur.com/9qkfrF7.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+ 
+- Logged in using domain account jthomas.
+
+### Testing Group Policy Application
 - Logged into Windows 11 with user accounts.
 - Verified policies:
   - Login banner displayed.
+
+ <p align="center">
+<img src="https://i.imgur.com/XRi218z.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+
   - Password rules enforced.
-  - Control Panel disabled for HR and Sales OUs.
+  - Control Panel disabled for every non-admin user.
+  -  This notification appears when a non-admin user attempts to open the control panel:
+
+ <p align="center">
+<img src="https://i.imgur.com/SoDUo99.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
 
 <h2>Conclusion</h2>
 This project successfully simulated a small business Active Directory environment with centralized authentication, authorization, and policy enforcement. It demonstrates practical skills in Windows Server administration, domain management, and enterprise-level IT support.
