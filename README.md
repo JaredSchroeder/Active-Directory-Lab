@@ -85,10 +85,9 @@ I designed and deployed a simulated small business IT environment using Windows 
 <br />
 
   - Desktop Restrictions: Disable Control Panel for non-admins.
-    - Created and applied a "StandardUsers" security group and added all non-administrative users to it so this GPO won't affect any admins.
-
+    - Checkmarked "Deny" to "Apply group policy" for domain and enterprise admins to ensure Administrators can access the control panel
 <p align="center">
-<img src="https://i.imgur.com/YOWSzB1.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/RrMZjdi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
