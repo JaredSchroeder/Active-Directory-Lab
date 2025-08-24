@@ -29,7 +29,7 @@ I designed and deployed a simulated small business IT environment using Windows 
 ### Windows Server 2022 Installation and Configuring AD DS
 - Installed Windows Server 2022 on a VM.
 - Configured static IP addressing.
-- Used the loopback address of 127.0.0.1 as the preferred DNS server as the Domain Controller will also be acting as a DNS server.
+- Set the loopback IP address of 127.0.0.1 as the preferred DNS server, since the Domain Controller also functions as a DNS server.
 <p align="center">
 <img src="https://i.imgur.com/IifnSmX.png" height="35%" width="35%" alt="Disk Sanitization Steps"/>
 <br />
@@ -85,7 +85,7 @@ I designed and deployed a simulated small business IT environment using Windows 
 <br />
 
   - Desktop Restrictions: Disable Control Panel for non-admins.
-    - Checkmarked "Deny" to "Apply group policy" for domain and enterprise admins to ensure administrators can still access the control panel
+    - Set "Deny" to "Apply group policy" for domain and enterprise admins to ensure administrators can still access the control panel
 <p align="center">
 <img src="https://i.imgur.com/RrMZjdi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
@@ -114,7 +114,7 @@ I designed and deployed a simulated small business IT environment using Windows 
 
 - Logged into Windows 11 with user accounts.
 - Verified policies:
-  - Login banner displayed.
+  - Login banner displayed:
 
  <p align="center">
 <img src="https://i.imgur.com/XRi218z.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
@@ -123,7 +123,7 @@ I designed and deployed a simulated small business IT environment using Windows 
 <br />
 
   - Password rules enforced.
-  - This message appears when attempting to create a new password that doesn't meet policy standards.
+  - This message appears when attempting to create a new password that doesn't meet policy standards:
 
  <p align="center">
 <img src="https://i.imgur.com/dFueSqh.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
@@ -140,8 +140,18 @@ I designed and deployed a simulated small business IT environment using Windows 
 <br />
 <br />
 
+<h2>Skills Demonstrated</h2>
+
+- Hypervisor setup with VirtualBox
+- Windows OS installation
+- Active Directory Domain Services (AD DS) installation and configuration
+- User, group, and OU creation and configuration
+- Group Policy Object (GPO) creation
+- Documentation of processes and policy enforcement
+<br />
+
 <h2>Conclusion</h2>
-This project successfully simulated a small business Active Directory environment with centralized authentication, authorization, and policy enforcement. It demonstrates practical skills in Windows Server administration, domain management, and enterprise-level IT support.
+This project demonstrates not only the ability to configure Active Directory but also to design a secure IT environment aligned with small-business needs. These are core skills for systems administration, IT support, and cybersecurity roles.
 <br />
 
 
