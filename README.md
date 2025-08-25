@@ -3,7 +3,7 @@
 
 
 <h2>Overview</h2>
-I designed and deployed a simulated small business IT environment using Windows Server 2022 and Windows 11 Enterprise. This project demonstrates my ability to configure and administer Active Directory Domain Services, manage and create users, groups, and organizational units (OUs), and apply Group Policy Objects (GPOs) for security and policy enforcement.
+I designed and deployed a simulated small company environment using Windows Server 2022 and Windows 11 Enterprise. This project demonstrates my ability to configure and administer Active Directory Domain Services, manage and create users, groups, and organizational units (OUs), and apply Group Policy Objects (GPOs) for security and policy enforcement.
 <br />
 
 
@@ -75,8 +75,15 @@ I designed and deployed a simulated small business IT environment using Windows 
 
 ### Configuring Group Policy Objects (GPOs)
 - Created and linked GPOs for different OUs using the Group Policy Management Editor:
+   - Login Banner: Display security/legal disclaimer at login.
+ <p align="center">
+<img src="https://i.imgur.com/JspWT4l.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br />
+
   - Password Policy: Minimum length, complexity, expiration.
-  - Moved the new password policy GPO to be higher in link order than the default domain policy to override the default password policy.
+    - Moved the new password policy GPO to be higher in link order than the default domain policy to override the default password policy.
 
 <p align="center">
 <img src="https://i.imgur.com/D2eoW0C.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -100,7 +107,7 @@ I designed and deployed a simulated small business IT environment using Windows 
 <br />
 
 ### Joining Windows 11 Client to the Domain
-- Installed Windows 11 Enterprise on VM.
+- Installed Windows 11 Enterprise on a VM.
 - Joined workstation WS01 to LAB.local.
 
 <p align="center">
@@ -146,12 +153,12 @@ I designed and deployed a simulated small business IT environment using Windows 
 - Windows OS installation
 - Active Directory Domain Services (AD DS) installation and configuration
 - User, group, and OU creation and configuration
-- Group Policy Object (GPO) creation
-- Documentation of processes and policy enforcement
+- Group Policy Object (GPO) creation and enforcement
+- Documentation of processes
 <br />
 
 <h2>Conclusion</h2>
-This project demonstrates not only the ability to configure Active Directory but also to design a secure IT environment aligned with small-business needs. These are core skills for systems administration, IT support, and cybersecurity roles.
+This project demonstrates my hands-on experience in Active Directory deployment and configuration. I showcased skills in user and group creation, OU structuring, and GPO enforcement. These are core skills for systems administration and IT/desktop support roles.
 <br />
 
 
