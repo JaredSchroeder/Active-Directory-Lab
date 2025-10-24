@@ -27,7 +27,7 @@ I designed and deployed a simulated small company environment using Windows Serv
 <h2>Implementation</h2>
 
 ### Windows Server 2022 Installation and Configuring AD DS
-- Installed Windows Server 2022 on a VM.
+- Installed Windows Server 2022 on a virtual machine. This Windows VM will serve as the Domain Controller.
 - Configured static IP addressing.
 - Set the loopback IP address of 127.0.0.1 as the preferred DNS server, since the Domain Controller also functions as a DNS server.
 <p align="center">
